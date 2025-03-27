@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: notifications
+Bundle-SymbolicName: notifications
+Package-Type: Web-Service
+Bundle-Version: 1.0.0
+
+Name: notification/notification.spec
+Web-Service: True
+
