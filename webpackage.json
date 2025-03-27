@@ -1,0 +1,12 @@
+{
+    "name": "notifications",
+    "displayName": "TI Native Browser Notifications",
+    "packageType": "Web-Service",
+    "icon": "https://t4.ftcdn.net/jpg/01/98/33/63/360_F_198336329_D3JsfuSGm5UBTXR9fwcr2WhKNebr7SiB.jpg",
+    "invertIcon": false,
+    "description": "Provides a way to show native browser notifications in Servoy TI Client",
+    "wikiUrl": "https://github.com/r4inX/svyNotifications/wiki",
+    "sourceUrl": "https://github.com/r4inX/svyNotifications",
+     "releases": [{"version": "1.0","url": "https://github.com/r4inX/svyNotifications/releases/download/v1.0/notifications.zip","servoy-version":"2024.12"}
+                ]
+}
