@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strict": true,
+    "ignoreDeprecations": "6.0",
     "paths": {},
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -9,19 +11,13 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom",
-      "dom.Iterable",
-      "ES2020.Promise"
-    ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
