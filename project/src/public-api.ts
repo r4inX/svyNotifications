@@ -1,7 +1,4 @@
 /*
- * Public API Surface
+ * Öffentliche API des Packages. Servoy importiert den Service über ng2Config.serviceName aus der Spec.
  */
-export * from './notifications.module';
-//export all components here
-//export * from './svygmaps/svygmaps';
-export * from './notification.service';
+export * from './native-notification.service';

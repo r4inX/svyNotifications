@@ -1,14 +1,26 @@
 /**
- * start a permission request to the browser-engine to allow the application to show notifications 
- * 
- * @return {String} returns the permission-status of the browser-engine
+ * Fragt beim Browser die Berechtigung für Benachrichtigungen an.
+ * Ist die Frage bereits beantwortet, kommt der gespeicherte Status ohne erneuten Dialog zurück.
+ * Benachrichtigungen funktionieren nur über HTTPS oder localhost.
+ *
+ * @example
+ * var lcPermission = plugins.notification.requestPermission();
+ * if (lcPermission == 'granted') {
+ *     plugins.notification.showNotification('Neue Nachricht', 'Ticket 4711 wurde aktualisiert');
+ * }
+ *
+ * @return {String} "granted", "denied", "default" (Dialog geschlossen ohne Entscheidung) oder "unsupported" (Browser ohne Notification-API)
  */
 function requestPermission() { }
 
 /**
- * shows a notification on the screen from the browser-engine 
- * 
- * @param {String} title the title of the notification
- * @param {String} body the body of the notification
+ * Zeigt eine native Benachrichtigung des Betriebssystems an.
+ * Fehlt die Berechtigung noch, fragt der Browser vorher nach. Wurde sie verweigert, passiert nichts.
+ *
+ * @example
+ * plugins.notification.showNotification('Neue Nachricht', 'Ticket 4711 wurde aktualisiert');
+ *
+ * @param {String} title Titel der Benachrichtigung
+ * @param {String} body Text der Benachrichtigung
  */
 function showNotification(title, body) { }

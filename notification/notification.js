@@ -1,18 +1,9 @@
-angular.module('notificationsNotification',['servoy'])
-.factory("notificationsNotification",function($services) 
-{
-	var scope = $services.getServiceScope('notificationsNotification');
+// Platzhalter für den alten NG1-Client. Das Package unterstützt nur den Titanium-Client (TiNG),
+// dort übernimmt NativeNotificationService (project/src) die API.
+angular.module('notificationsNotification', ['servoy'])
+.factory('notificationsNotification', function() {
 	return {
-		helloworld: function(text) {
-			alert("helloworld: " + scope.model.text + text);
-		}
-	}
-})
-.run(function($rootScope,$services)
-{
-	var scope = $services.getServiceScope('notificationsNotification')
-	scope.$watch('model', function(newvalue,oldvalue) {
-	// handle state changes
-		console.log(newvalue)
-}, true);
-})
+		showNotification: function() { },
+		requestPermission: function() { return 'unsupported'; }
+	};
+});
